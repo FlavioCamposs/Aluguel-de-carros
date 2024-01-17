@@ -1,0 +1,29 @@
+Primeiramente, o programa é uma espécie de sistema de aluguel de carros com um menu de opções. Vou explicar cada parte:
+
+1. **Apresentação Inicial:**
+   - `from time import sleep`: Importa a função `sleep` do módulo `time` para criar pausas no código.
+   - `print('\033[1;30;107mSEJA MUITO BEM VINDO AO ALUGUEL DE CARROS DO FLÁVIO!!\033[m')`: Imprime uma mensagem de boas-vindas com cores (código ANSI para cores no terminal).
+   - `print('-=' * 35)`: Imprime uma linha de separação visual.
+
+2. **Menu de Serviços:**
+   - Apresenta as opções disponíveis para o usuário escolher entre alugar um novo carro (opção 1) ou verificar a taxa de aluguel de um carro já alugado (opção 2).
+
+3. **Escolha do Serviço:**
+   - `servico = int(input('Qual serviço você escolhe? '))`: Solicita ao usuário a escolha entre os serviços.
+
+4. **Aluguel de Novo Carro (Opção 1):**
+   - Se o usuário escolhe alugar um novo carro (`servico == 1`), apresenta a lista de carros disponíveis.
+   - Solicita ao usuário que escolha um carro, e com base na escolha, apresenta informações sobre o carro e calcula o valor do aluguel com base nos dias e na quilometragem.
+
+5. **Verificação de Taxa (Opção 2):**
+   - Se o usuário escolhe verificar a taxa de aluguel de um carro já alugado (`servico == 2`), solicita o nome do carro e informações sobre dias e quilometragem para calcular a taxa de aluguel.
+
+6. **Desconto por Período de Aluguel (Opção 2):**
+   - Se o período de aluguel for maior que 15 dias, oferece um desconto de 15% na taxa final.
+
+7. **Conclusão:**
+   - Ao final, emite mensagens informando se o serviço foi concluído, cancelado ou se ocorreu algum erro na escolha.
+
+O código está bem estruturado e oferece uma interação clara com o usuário. Cada seção do código está organizada de forma a tratar a escolha do usuário adequadamente.
+
+Se precisar de mais esclarecimentos sobre algum ponto específico, sinta-se à vontade para perguntar!
